@@ -24,12 +24,15 @@
 			logSocket.onmessage = function (message) {
 				var record = JSON.parse(message.data);
 				var color = "#44EE44";
-				if (record.level === 'ERROR') {
-					color = "red";
-				}
+				
+				if (record.level === 'ERROR') color = "red";
+				else if (record.level === 'DEBUG') color = "silver";
+				else if (record.level === 'WARN') color = "yellow";
+				else if (record.level === 'TRACE') color = "white";
+				
 				var date = new Date(record.timestamp);
 				var id = record.timestamp;
-				document.writeln("<div id='" + id + "' style='background-color: black; font-family: monospace; color: " + color + "'>[" + date.toISOString() + "]" + record.message + "</div>");
+				document.writeln("<div id='" + id + "' style='background-color: black; font-family: monospace; color: " + color + "'>[" + date.toISOString() + "]" + " [" + record.level + "] " + record.message + "</div>");
 				window.location.hash = "#" + id;				
 			};
 			
