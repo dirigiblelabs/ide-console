@@ -3,7 +3,7 @@
 [![Eclipse License](http://img.shields.io/badge/license-Eclipse-brightgreen.svg)](LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/dirigiblelabs/ide-console.svg)](https://github.com/dirigiblelabs/ide-console/graphs/contributors)
 
-### Overview
+## Overview
 
 Console Plugin for the [Eclipse Dirigible](https://github.com/eclipse/dirigible) WebIDE v3.x and above.
 
@@ -11,6 +11,6 @@ Build the [Eclipse Dirigible](https://github.com/eclipse/dirigible), deploy on e
 
 > http://localhost:8080/services/v3/web/ide-console/console.html
 
-### License
+## License
 
 This project is copyrighted by [SAP SE](http://www.sap.com/) and is available under the [Eclipse Public License v 1.0](https://www.eclipse.org/legal/epl-v10.html). See [LICENSE](LICENSE) and [NOTICE.txt](NOTICE.txt) for further details.
