@@ -3,7 +3,7 @@ exports.getView = function() {
 			"id":"console",
 			"name":"Console",
 			"factory":"frame",
-			"region":"right-bottom",
+			"region":"center-bottom",
 			"label":"Console",
 			"link":"../ide-console/console.html"
 	};
