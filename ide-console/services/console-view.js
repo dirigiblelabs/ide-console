@@ -11,10 +11,9 @@
 
 const viewData = {
 	id: "console",
-	name: "Console",
-	factory: "frame",
-	region: "center-bottom",
 	label: "Console",
+	factory: "frame",
+	region: "bottom",
 	link: "../ide-console/console.html"
 };
 if (typeof exports !== 'undefined') {
