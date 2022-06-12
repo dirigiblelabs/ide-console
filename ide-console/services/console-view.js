@@ -8,14 +8,16 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-exports.getView = function () {
-	let view = {
-		"id": "console",
-		"name": "Console",
-		"factory": "frame",
-		"region": "center-bottom",
-		"label": "Console",
-		"link": "../ide-console/console.html"
-	};
-	return view;
+
+const viewData = {
+	id: "console",
+	label: "Console",
+	factory: "frame",
+	region: "bottom",
+	link: "../ide-console/console.html"
+};
+if (typeof exports !== 'undefined') {
+	exports.getView = function () {
+		return viewData;
+	}
 }
